@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sh snapper-snap root SystemUpdate
+
 echo "---------------------------------------------"
 echo "PACMAN UPDATE"
 echo "---------------------------------------------"
