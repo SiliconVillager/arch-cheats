@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SNAPPER_CONFIG=root
+
+if [[ $# -eq 1 ]]; then
+  SNAPPER_CONFIG=$1
+fi
+
+snapper -c $SNAPPER_CONFIG list
