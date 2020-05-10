@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# The scripts filters mirror servers according to the selected country and sort them by speed
+
+pacman -Syyy
+sleep 1
+pacman -S reflector
+sleep1
+reflector -c Czechia -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+sleep 1
+pacman -Syyy
