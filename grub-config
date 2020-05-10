@@ -1,0 +1,9 @@
+#!/bin/bash
+
+EDITOR=nano
+
+if [[ $# -eq 1 ]]; then
+  EDITOR=$1
+fi
+
+$EDITOR /etc/default/grub
