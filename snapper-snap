@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Create snapshot via snapper
+
+if [[ $# -ne 2 ]]; then
+    echo "Illegal parameters"
+    exit 2
+fi
+
+snapper -c $1 create -c timeline --description $2
