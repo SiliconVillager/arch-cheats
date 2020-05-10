@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "---------------------------------------------"
+echo "IOMMU CHECK"
+echo "---------------------------------------------"
+
+# The command checks if IOMMU is working correctly
+dmesg | grep -E "DMAR|IOMMU"
+
+echo "---------------------------------------------"
+echo "VFIO CHECK"
+echo "---------------------------------------------"
+
+# The command checks if VFIO is working correctly
+dmesg | grep -i vfio
