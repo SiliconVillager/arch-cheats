@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# The scripts filters mirror servers according to the selected country and sort them by speed
+# The script filters mirror servers according to the selected country and sort them by speed
 
 pacman -Syyy
 sleep 1
