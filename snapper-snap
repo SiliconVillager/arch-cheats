@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "---------------------------------------------"
+echo "SNAPPER SNAPSHOT"
+echo "---------------------------------------------"
+
 # Create snapshot via snapper
 
 if [[ $# -ne 2 ]]; then
