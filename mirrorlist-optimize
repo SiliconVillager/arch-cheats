@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "---------------------------------------------"
+echo "OPTIMIZING MIRRORLIST"
+echo "---------------------------------------------"
+
 # The script filters mirror servers according to the selected country and sorts them by speed
 
 COUNTRY=Czechia
