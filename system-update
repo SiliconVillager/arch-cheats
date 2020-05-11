@@ -14,7 +14,7 @@ echo "PACMAN UPDATE"
 echo "---------------------------------------------"
 
 # Update pacman
-pacman -Syu
+pacman -Syyu
 
 echo "---------------------------------------------"
 echo "AUR UPDATE"
