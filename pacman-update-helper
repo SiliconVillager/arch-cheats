@@ -180,8 +180,7 @@ optimizePacman ()
 {
 	local prunechace=
 	local action=
-	local THISTTY=$(tty)
-	
+	local THISTTY=$(tty)	
 
 	printHeader "Optimizing pacman..."
 	
@@ -191,34 +190,8 @@ optimizePacman ()
 	sudo pacman -Rns --noconfirm --color=auto $(pacman -Qtdq)
 	echo ""
 	
-	
-	printPromt "Remove old packages from cache? (Not recommended) y/N: "
-	exec 6<&0
-	exec 0<"$THISTTY"
-	read -n 1 action
-	exec 0<&6 6<&-
-
-	case "$action" in
-		y )
-			prunechace=true;;
-		Y )
-			prunechace=true;;
-		* )
-			prunechace=false;;
-	esac
-	
-	if [ "$prunechace" == "true" ]; then
-		printInfo "Removing uninstalled packages:\n"
-		sudo pacman -Sc --noconfirm --color=auto
-		echo ""
-	else
-		printInfo "... skipping"
-	fi
-	
-	
 	printInfo "Compacting pacman database for faster access in the future:\n"
-	sudo pacman-optimize
-	
+	sudo pacman-optimize	
 	
 	printSuccess "Pacman optimized"	
 }
