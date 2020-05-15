@@ -6,16 +6,16 @@ echo "---------------------------------------------"
 
 # The script filters mirror servers according to the selected country and sorts them by speed
 
-COUNTRY=Czechia
+COUNTRY=Germany
 
 if [[ $# -eq 1 ]]; then
   COUNTRY=$1
 fi
 
-pacman -Syyy
+sudo pacman -Syyy
 sleep 1
-pacman -S reflector
+sudo pacman -S reflector
 sleep1
-reflector -c $COUNTRY -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector -c $COUNTRY -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 sleep 1
-pacman -Syyy
+sudo pacman -Syyy
