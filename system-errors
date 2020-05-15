@@ -10,10 +10,10 @@ echo "---------------------------------------------"
 echo "SERVICES"
 echo "---------------------------------------------"
 
-systemctl --failed
+sudo systemctl --failed
 
 echo "---------------------------------------------"
 echo "JOURNAL"
 echo "---------------------------------------------"
 
-journalctl -p 3 -xb
+sudo journalctl -p 3 -xb
