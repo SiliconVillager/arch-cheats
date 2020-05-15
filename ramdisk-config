@@ -6,4 +6,5 @@ if [[ $# -eq 1 ]]; then
   EDITOR=$1
 fi
 
-$EDITOR /etc/mkinitcpio.conf
+sudo $EDITOR /etc/mkinitcpio.conf
+sh ramdisk-regenerate
