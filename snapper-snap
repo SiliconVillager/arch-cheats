@@ -11,4 +11,4 @@ if [[ $# -ne 2 ]]; then
     exit 2
 fi
 
-snapper -c $1 create -c timeline --description $2
+sudo snapper -c $1 create -c timeline --description $2
