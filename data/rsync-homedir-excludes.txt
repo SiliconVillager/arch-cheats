@@ -27,7 +27,7 @@
 #.local/libvirt
 #.vagrant
 #.vagrant.d
-#.wine
+.wine
 #.twister
 #/twister
 #Applications/eclipse*
@@ -35,7 +35,7 @@
 #*Popcorntime*
 #/.aMule
 #/Scribus
-#/VirtualBox*
+/VirtualBox*
 #/Nextcloud
 #_build
 #
@@ -45,14 +45,14 @@
 ## Add Game Folders here:
 #
 #/games
-#.local/share/Steam
-#.steam
-#/Steam
-#.minecraft
-#.PlayOnLinux
+.local/share/Steam
+.steam
+/Steam
+.minecraft
+.PlayOnLinux
 #
 ## Spotify
-#.config/spotify/Users
+.config/spotify/Users
 #
 ## those folders contain only temporary Videos I want to watch
 #/Videos
@@ -362,3 +362,9 @@ nohup.out
 # ccache, remove cache but keep config
 .ccache/?
 .ccache/tmp
+
+# dropbox
+.dropbox-dist
+
+# slack
+.var/app/com.slack.Slack
