@@ -365,6 +365,7 @@ nohup.out
 
 # dropbox
 .dropbox-dist
+.dropbox
 
 # slack
 .var/app/com.slack.Slack
