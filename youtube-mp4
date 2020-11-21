@@ -1,0 +1,9 @@
+
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Illegal parameters"
+    exit 2
+fi
+
+youtube-dl -f mp4 $1
