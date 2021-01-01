@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Automatically create system snapshot
-sudo sh snapper-snap root SystemUpdate
+sh snapper-snap root SystemUpdate
+sh snapper-list root
 
 echo "---------------------------------------------"
 echo "PACMAN UPDATE"
