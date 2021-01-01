@@ -1,6 +1,6 @@
 #!/bin/bash
 
-EDITOR=nano
+EDITOR=vim
 
 if [[ $# -eq 1 ]]; then
   EDITOR=$1
