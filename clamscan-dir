@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SCANDIR=~/.
+
+if [[ $# -eq 1 ]]; then
+  SCANDIR=$1
+fi
+
+sudo clamdscan --multiscan --fdpass $SCANDIR
