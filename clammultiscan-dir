@@ -6,4 +6,4 @@ if [[ $# -eq 1 ]]; then
   SCANDIR=$1
 fi
 
-sudo clamdscan --infected --remove --multiscan --fdpass $SCANDIR
+sudo clamdscan --remove --multiscan --verbose --fdpass $SCANDIR
