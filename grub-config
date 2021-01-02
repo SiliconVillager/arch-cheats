@@ -7,3 +7,5 @@ if [[ $# -eq 1 ]]; then
 fi
 
 sudo $EDITOR /etc/default/grub
+
+sh grub-regenerate
