@@ -1,0 +1,4 @@
+
+#!/bin/bash
+
+clamscan --recursive --infected --remove --max-filesize=4000M --max-scansize=4000M --exclude-dir='^/sys|^/dev' /
