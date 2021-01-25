@@ -15,5 +15,5 @@ echo "---------------------------------------------"
 echo "AUR UPDATE"
 echo "---------------------------------------------"
 
-# Update yay
-yay -Syu
+# Update AUR via paru
+paru
