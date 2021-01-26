@@ -1,0 +1,8 @@
+
+#!/bin/bash
+
+ln -s /usr/bin/firejail /usr/local/bin/firefox
+ln -s /usr/bin/firejail /usr/local/bin/brave
+ln -s /usr/bin/firejail /usr/local/bin/google-chrome-stable
+ln -s /usr/bin/firejail /usr/local/bin/vlc
+ln -s /usr/bin/firejail /usr/local/bin/com.slack.Slack
