@@ -1,9 +1,0 @@
-#!/bin/bash
-
-echo "---------------------------------------------"
-echo "UPDATING ARCH CHEATS"
-echo "---------------------------------------------"
-
-git reset --hard
-git pull
-chmod +x *
