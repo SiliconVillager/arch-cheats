@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Remove yay for update 
+sudo pacman -R yay
+
+# Build yay
+cd /tmp
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+
+# clean /tmp folder
+rm -rf yay
