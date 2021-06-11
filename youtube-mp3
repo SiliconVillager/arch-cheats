@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if [[ $# -ne 1 ]]; then
-    echo "Illegal parameters"
-    exit 2
-fi
-
-youtube-dl -x --audio-format mp3 $1
