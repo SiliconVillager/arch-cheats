@@ -4,14 +4,7 @@
 sh snapper-snap root SystemUpdate
 
 echo "---------------------------------------------"
-echo "PACMAN UPDATE"
-echo "---------------------------------------------"
-
-# Update pacman
-sudo pacman -Syyu
-
-echo "---------------------------------------------"
-echo "AUR UPDATE"
+echo "FULL UPDATE"
 echo "---------------------------------------------"
 
 # Update AUR
