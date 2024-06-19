@@ -1,0 +1,9 @@
+#!/bin/bash
+
+NVIM_LISTEN_ADDRESS=${NVIM_LISTEN_ADDRESS:-/tmp/nvimsocket}
+
+if [ -e "$NVIM_LISTEN_ADDRESS" ]; then
+    nvr --remote-silent "$@"
+else
+    nvim --listen "$NVIM_LISTEN_ADDRESS" "$@"
+fi
