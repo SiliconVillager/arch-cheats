@@ -5,4 +5,4 @@ if [[ $# -ne 1 ]]; then
     exit 2
 fi
 
-rsync -aP --delete --exclude-from=./data/rsync-homedir-excludes.txt /home/$USER/ $1
+rsync -avPW --delete --exclude-from=./data/rsync-homedir-excludes.txt /home/$USER/ $1
